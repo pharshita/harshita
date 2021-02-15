@@ -37,5 +37,4 @@ while(count<=numOfTerms){
     }
     i++
 }
-
 console.log(res)
