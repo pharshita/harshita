@@ -1,12 +1,22 @@
-function generatevarcharOTP()
-{
-    var string='0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
-    var OTP='  '
-    var len=string.length
-    for(i=0; i<9; i++)
-    {
-        OTP+=string[Math.floor(Math.random ()* len)]
+
+function getOtp(numOfDigits){
+    var otp = ""
+    for(var i = 0; i<numOfDigits; i++){
+        var rand = Math.round(Math.random()*1000000)%10
+        otp += rand
     }
- return OTP
+    return otp
 }
-console.log(generatevarcharOTP())
+
+
+function getVarCharOtp(numOfChars){
+    var str = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+    var otp = ""
+    for(var i = 0; i<numOfChars; i++){
+        var rand = Math.round(Math.random()*1000000)%str.length
+        otp += str[rand]
+    }
+    return otp
+}
+
+console.log(getOtp(6), getVarCharOtp(6))

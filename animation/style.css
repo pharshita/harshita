@@ -1,0 +1,44 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.div-1{
+    width: 150px;
+    height: 150px;
+    background: red;
+    /*transform: translate(80px 70px);
+    transform: rotatex( 60deg);
+    transform: scalez(2);
+    transform: skewy(30deg);*/
+    animation-duration: 1s;
+    animation-name: harshu;
+    animation-iteration-count: infinite;
+    transition: background 3s linear,transform 2s linear;
+}
+
+/*.div-1:hover{
+    background: yellow;
+    transform: rotatey(10deg);}*/
+
+@keyframes harshu{
+ /*   from
+    {
+      transform: translatex(-200px);
+    }
+    to{
+      transform: translatex(2000px);
+    }*/
+
+   0%{
+        background: yellow;
+    }
+    10%{
+        background: blue;
+    }
+    50%{
+        background: green;
+    }
+    100%{
+        background: pink;
+    }
+}

@@ -1,0 +1,35 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+    display: flex;
+  /* flex-direction: row-reverse;*/
+     /* flex-flow: column wrap; */
+    border: 1px solid black;
+   /* align-items: stretch;
+   align-items: center; */
+
+   
+}
+.div1{
+ background: blue;
+}
+.div2
+{
+    background: pink;
+    flex-grow: 6;
+}
+.div3{
+    background: cadetblue;
+    order:9;
+}
+.div4
+{
+    background: chartreuse;
+    flex: 1,1;
+}
+.div5{
+
+background: red;
+}

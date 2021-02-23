@@ -1,0 +1,18 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+div{
+    min-height: 50px;
+    border: 1px solid black;
+}
+h2[sid-vish="abc"]{
+    background-color: red;
+}
+a[data-toggle="tool-tip"]:hover::before{
+    content: attr(data-title);
+    position: absolute;
+    top:15px;
+    background-color: lightgray;
+}
