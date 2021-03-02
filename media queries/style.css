@@ -2,13 +2,21 @@
     margin: 0px;
     padding: 0px;
 }
- @media screen and (max-width:480px) and (orientation:landscape){
+.div-1{
+    height: 500px;
+}
+
+.div-1 p{
+    font-size:60px;
+}
+
+@media screen and (max-width:480px) {
     .div-1 p{
-        font-size: 3px;
-    
+        font-size: 20px;
     }
 }
- 
+
+
 
  @media screen and (min-width:481px) and (max-width:760px){
     .div-1 p{
@@ -21,4 +29,4 @@
     .div-1 p{
         font-size: 60px;
     }
-}   
+}
