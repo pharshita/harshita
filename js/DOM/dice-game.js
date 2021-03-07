@@ -2,8 +2,8 @@ var score = 0
 var count = 0
 var winningScore = 50
 
-document.getElementById('btnRoll').addEventListener('click'){
-
+document.getElementById('btnRoll').addEventListener('click', (e)=>{
+    console.log(e)
   var random =  Math.round(Math.random()*100)%6 + 1
   var imgUrl = `dice/${random}.png`
 
@@ -22,4 +22,4 @@ document.getElementById('btnRoll').addEventListener('click'){
   document.getElementById('count').innerText = count
 
 
-}
+})
