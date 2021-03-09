@@ -148,10 +148,12 @@ $(function(){
             con_password()
 
             if((user_err==true) && (pass_err==true) && (conpass_err==true)){
-                     return true
+                alert('form submited')
             }else{
                 return false
             }
+
+            
         })
     })
 })
