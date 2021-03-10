@@ -136,7 +136,7 @@ $(function(){
             
         }
 
-        $('body').on('click' ,'.submitbtn' ,function(){
+        $('body').on('click' ,'.submitbtn' , function(){
             user_err=true
             mail_err=true
             pass_err=true
